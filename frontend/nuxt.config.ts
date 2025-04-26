@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxt/ui',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxtjs/google-fonts'
   ],
 
   // Configure color mode
@@ -16,6 +17,18 @@ export default defineNuxtConfig({
     classPrefix: '',
     classSuffix: '',
     storageKey: 'nuxt-color-mode'
+  },
+
+  // Configure Google Fonts
+  googleFonts: {
+    families: {
+      Roboto: [300, 400, 500, 700]
+    },
+    display: 'swap',
+    preload: true,
+    prefetch: true,
+    preconnect: true,
+    download: false
   },
 
   css: [

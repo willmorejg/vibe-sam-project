@@ -5,6 +5,7 @@
   --text-color: #212529;
   --border-color: #e9ecef;
   --property-item-bg: #f8f9fa;
+  --font-family: 'Roboto', sans-serif;
 }
 
 /* Dark mode styles */
@@ -16,9 +17,20 @@
   --property-item-bg: #2c2c2c;
 }
 
+/* Light mode styles */
+.light-mode {
+  --body-bg: #f8f9fa;
+  --card-bg: #fff;
+  --text-color: #212529;
+  --border-color: #e9ecef;
+  --property-item-bg: #f8f9fa;
+}
+
 body {
   background-color: var(--body-bg);
   color: var(--text-color);
+  font-family: var(--font-family);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .page-container {
